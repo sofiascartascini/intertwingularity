@@ -1,3 +1,4 @@
+
 <style>
   body {
     margin: 0;
@@ -19,27 +20,44 @@
     top: 5%;
   }
 
+  #january {
+    position: absolute;
+    left: 53%;
+    top: 3%;
+    width: 10%;
+    height: 12%;
+    cursor: pointer;
+  }
 
-#january {
-  position: absolute;
-  left: 53%;
-  top: 3%;
-  width: 10%;
-  height: 12%;
-  background-color: red;
-  opacity: 0.5;
-  cursor: pointer;
-}
+  #januaryImage {
+    display: none;
+    position: absolute;
+    left: 53%;
+    top: 3%;
+    width: 10%;
+    height: 12%;
+  }
 
+  #januaryImage img {
+    width: 100%;
+    height: 100%;
+  }
 
+  #januaryImage:target {
+    display: block;
+  }
 </style>
 
 <div id="scene">
-  <a id="back" href="index.html">Back to Room 1</a>
-</div>
 
-<div id="scene">
-  <a id="back" href="index.html">Back to Estella</a>
-  <a id="january" href="january.html"></a>
-</div>
+  <a id="back" href="index.html">
+    Back to Room 1
+  </a>
 
+  <a id="january" href="#januaryImage"></a>
+
+  <a id="januaryImage" href="#scene">
+    <img src="https://raw.githubusercontent.com/sofiascartascini/intertwingularity/main/SOFIASKETCH.png">
+  </a>
+
+</div>
