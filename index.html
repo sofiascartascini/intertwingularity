@@ -9,7 +9,7 @@
     width: 100vw;
     height: 100vh;
     background-image: url("https://raw.githubusercontent.com/sofiascartascini/intertwingularity/main/ESTELLASKETCH.png");
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     position: relative;
   }
@@ -23,7 +23,56 @@
     cursor: url("https://raw.githubusercontent.com/sofiascartascini/intertwingularity/main/SOFIACURSOR4.png"), auto;
   }
 </style>
-
 <div id="scene">
   <a id="door" href="ryan.html"></a>
+<a id="photoz" href="aidansketch.html"> 
+<p style="text-align: center">
+   /
+				    \
+
+
+
+                            |/
+				   |
+				 /  </p>
+
+<p style="text-align: center">
+  nn
+HH
+
+w v v   </p>
+<p style="text-align: center">
+                             		      7
+					       。                                      H
+					       O
+					       H
+				   	      n
+					   . .
+                        
+			   	     P    o/ </p>
+
+</a>
 </div>
+<img src="https://raw.githubusercontent.com/sofiascartascini/intertwingularity/main/banana.png" alt="a compact disc" width="80">
+
+<script>
+  const cd = document.querySelector('[alt="a compact disc"]')
+  cd.style.position = 'absolute'
+
+  function animate() {
+    requestAnimationFrame(animate)
+    const time = Date.now()
+    const radius = window.innerWidth * 0.25
+    const scale = -0.001
+    const offset = {
+      x: window.innerWidth * 0.5,
+      y: window.innerHeight * 0.5
+    }
+    const x = Math.sin(time * scale) * radius + offset.x
+    const y = Math.cos(time * scale) * radius + offset.y
+    cd.style.left = `${x}px`
+    cd.style.top = `${y}px`
+  }
+
+  window.addEventListener('load', animate)
+</script>
