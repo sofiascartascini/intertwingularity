@@ -13,18 +13,35 @@
     background-position: center;
     position: relative;
   }
-
   #door {
     position: absolute;
     left: 40%;
     top: 22%;
-    width: 20%;
+    width: 18%;
     height: 45%;
+    cursor: url("https://raw.githubusercontent.com/sofiascartascini/intertwingularity/main/SOFIACURSOR4.png"), auto;
+  }
+  #broken_1 {
+    position: absolute;
+    left: 63%;
+    top: 10%;
+    width: 15%;
+    height: 20%;
+    cursor: url("https://raw.githubusercontent.com/sofiascartascini/intertwingularity/main/SOFIACURSOR4.png"), auto;
+  }
+  #broken_2 {
+    position: absolute;
+    left: 9%;
+    top: 34%;
+    width: 5%;
+    height: 5%;
     cursor: url("https://raw.githubusercontent.com/sofiascartascini/intertwingularity/main/SOFIACURSOR4.png"), auto;
   }
 </style>
 <div id="scene">
   <a id="door" href="ryan.html"></a>
+  <a id="broken_1" href="https://www.webpagetest.org/blank.html"></a>
+  <a id="broken_2" href="https://https://validator.w3.org/checklink"></a>
 <a id="photoz" href="aidansketch.html"> 
 <p style="text-align: center">
    /
@@ -73,6 +90,13 @@ w v v   </p>
     cd.style.left = `${x}px`
     cd.style.top = `${y}px`
   }
+window.addEventListener('load', animate)
 
-  window.addEventListener('load', animate)
+  function openNASA(event) {
+    if (event.code === 'Space') {
+     window.open('https://science.nasa.gov/photojournal/the-space-between/', '_blank')
+    }
+  }
+
+  document.addEventListener('keydown', openNASA)
 </script>
